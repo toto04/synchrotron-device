@@ -12,8 +12,8 @@
 // #define STRIP4_LENGTH 28
 // #define STRIP4_PIN 3
 
-#define SSID "Rete WiFi Morganti"
-#define PASS "0342070023"
+#define SSID "**********"
+#define PASS "**********"
 #define NAME "superFunLight"
 
 #define SYNCHROTRON_PORT 2077

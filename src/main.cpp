@@ -13,7 +13,7 @@ void broadcast() {
     IPAddress subnet = WiFi.subnetMask();
     // get the boardcast address as local IP AND NOT subnet mask
     for (uint8_t i = 0; i < 4; i++)
-        broadcast_address[i] = broadcast_address[i] & ~subnet[i];
+        broadcast_address[i] = broadcast_address[i] | ~subnet[i];
     //broadcast the packet to the synch port
     udp.beginPacket(broadcast_address, SYNCHROTRON_PORT);
     udp.write("SYNCHROTRON CONNECT");
